@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import {Route, Routes} from 'react-router-dom'
+import Home from './pages/Home'
+import Infinite from './pages/Infinite'
+import Normal from './pages/Normal'
+import Paginate from './pages/Paginate'
+import ViewPortList from './pages/ViewPortList'
+import Virtualize from './pages/Virtualize'
+import Windowing from './pages/Windowing'
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home {...props}/>}/>
+      <Route path="/normal" element={<Normal {...props}/>}/>
+      <Route path="/paginate" element={<Paginate {...props}/>}/>
+      <Route path="/infinite" element={<Infinite {...props}/>}/>
+      <Route path="/virtualize" element={<Virtualize {...props}/>}/>
+      <Route path="/windowing" element={<Windowing {...props}/>}/>
+      <Route path="/viewport" element={<ViewPortList {...props}/>}/>
+    </Routes>
   );
 }
 
