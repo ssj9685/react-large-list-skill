@@ -11,13 +11,13 @@ import Windowing from './pages/Windowing'
 function App(props) {
   return (
     <Routes>
-      <Route path='/' element={<Home {...props}/>}/>
-      <Route path="/normal" element={<Normal {...props}/>}/>
-      <Route path="/paginate" element={<Paginate {...props}/>}/>
-      <Route path="/infinite" element={<Infinite {...props}/>}/>
-      <Route path="/virtualize" element={<Virtualize {...props}/>}/>
-      <Route path="/windowing" element={<Windowing {...props}/>}/>
-      <Route path="/viewport" element={<ViewPortList {...props}/>}/>
+      <Route path='/react-large-list-skill' element={<Home {...props}/>}/>
+      <Route path="/react-large-list-skill/normal" element={<Normal {...props}/>}/>
+      <Route path="/react-large-list-skill/paginate" element={<Paginate {...props}/>}/>
+      <Route path="/react-large-list-skill/infinite" element={<Infinite {...props}/>}/>
+      <Route path="/react-large-list-skill/virtualize" element={<Virtualize {...props}/>}/>
+      <Route path="/react-large-list-skill/windowing" element={<Windowing {...props}/>}/>
+      <Route path="/react-large-list-skill/viewport" element={<ViewPortList {...props}/>}/>
     </Routes>
   );
 }
